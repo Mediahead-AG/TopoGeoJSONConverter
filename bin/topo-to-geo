@@ -1,18 +1,21 @@
-process.stdin.resume();
+#!/usr/bin/env node
 
 var topojson = require('topojson');
 var data = "";
+var args = process.argv.slice(2);
+var pretty = false;
 
+if(args[0] == '--pretty') {
+    pretty = 4;
+}
+
+process.stdin.resume();
 process.stdin.on("data", function(chunk) {
     data = data + chunk;
 });
-
 process.stdin.on("end", function() {
     convertTopojsonToGeojson(data);
 });
-
-
-
 
 function convertTopojsonToGeojson(topojsonString) {
     try {
@@ -29,7 +32,7 @@ function convertTopojsonToGeojson(topojsonString) {
         //get the complete GeoJSON data
         var geojson = geJSONobj.getData();
         //Write it to the geojson text box
-        process.stdout.write(JSON.stringify(geojson, null, 4));
+        process.stdout.write(JSON.stringify(geojson, null, pretty));
     } catch (error) {
        // displayError('There was an unknown error converting your TopoJSON to GeoJSON. Sorry.');
         console.log(error, error.message);

@@ -19,6 +19,10 @@
     "convert"
   ],
   "author": "Jonatan Männchen <jonatan@maennchen.ch>",
+  "contributors": [
+    "Moritz Winger <moritzwinger1@gmail.com>",
+    "Jeffrey Paine <github@jeffpaine.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/maennchen/TopoGeoJSONConverter/issues"
@@ -26,5 +30,8 @@
   "homepage": "https://github.com/maennchen/TopoGeoJSONConverter",
   "dependencies": {
     "topojson": "^1.6.18"
+  },
+  "bin": {
+    "topo-to-geo": "./bin/topo-to-geo"
   }
 }
