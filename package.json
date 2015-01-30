@@ -1,0 +1,30 @@
+{
+  "name": "topo-geo-json-converter",
+  "version": "0.0.1",
+  "description": "Convert TopoJSON to GeoJSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maennchen/TopoGeoJSONConverter.git"
+  },
+  "keywords": [
+    "topo",
+    "geo",
+    "topojson",
+    "geojson",
+    "json",
+    "convert"
+  ],
+  "author": "Jonatan Männchen <jonatan@maennchen.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maennchen/TopoGeoJSONConverter/issues"
+  },
+  "homepage": "https://github.com/maennchen/TopoGeoJSONConverter",
+  "dependencies": {
+    "topojson": "^1.6.18"
+  }
+}
