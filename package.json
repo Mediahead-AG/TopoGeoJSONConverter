@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maennchen/TopoGeoJSONConverter.git"
+    "url": "https://github.com/Mediahead-AG/TopoGeoJSONConverter.git"
   },
   "keywords": [
     "topo",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maennchen/TopoGeoJSONConverter/issues"
+    "url": "https://github.com/Mediahead-AG/TopoGeoJSONConverter/issues"
   },
-  "homepage": "https://github.com/maennchen/TopoGeoJSONConverter",
+  "homepage": "https://github.com/Mediahead-AG/TopoGeoJSONConverter",
   "dependencies": {
     "topojson": "^1.6.18"
   },
