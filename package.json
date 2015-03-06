@@ -1,6 +1,6 @@
 {
   "name": "topo-geo-json-converter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert TopoJSON to GeoJSON",
   "main": "index.js",
   "scripts": {
